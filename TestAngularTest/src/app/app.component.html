@@ -1,0 +1,26 @@
+<div>
+  <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <a href="#" class="navbar-brand">Test Pokemon</a>
+    <div class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a routerLink="pokemons" class="nav-link">Pokemon Name</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="pokemonByName" class="nav-link">Pokemon by Name</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="pokemonByWeaknesses" class="nav-link">Pokemon by Weaknesses</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="pokemonByStrong" class="nav-link">Pokemon by Strong</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="pokemonBattle" class="nav-link">Pokemon battle</a>
+      </li>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>

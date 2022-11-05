@@ -1,0 +1,35 @@
+<div class="list row">
+    <div class="col-md-8">
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control marginLedt"
+          placeholder="My Pokemon"
+          [(ngModel)]="myPokemon"
+        />
+        <input
+          type="text"
+          class="form-control marginLedt"
+          placeholder="Enemy Pokemon"
+          [(ngModel)]="enemyPokemon"
+        />
+        <div class="input-group-append marginLedt">
+          <button
+            class="btn btn-outline-secondary"
+            (click)="battle()"
+          >
+            Result
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6" *ngIf="result!=''">
+        <ul class="list-group">
+          <li
+            class="list-group-item"
+          >
+            {{ result }}
+          </li>
+        </ul>
+    </div>
+</div>
